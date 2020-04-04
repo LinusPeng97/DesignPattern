@@ -1,6 +1,9 @@
 package main.java.pers.linus.construct.flyweight;
 
-public class Main {
+/**
+ * 当要创建的对象有大量内部状态相同和少量需要从外部获得的外部状态时可以使用享元模式
+ */
+public class Client {
     public static void main(String[] args) {
         Circle circle1 = (Circle) CircleFactory.getCircle("green");
         circle1.setRadius(1);
